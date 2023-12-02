@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="logo.jpeg" alt="logo" type="Image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.topnav {
+overflow: hidden;
+background-color: #ffffff;
+position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+.topnav a {
+    float: left;
+font-family: Arial, Helvetica, sans-serif;
+color: #573A34;
+text-align: center;
+width: 16.66%;
+padding: 10px 10px;
+text-decoration: none;
+font-size: 15px;
+display: block;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+color: rgb(255, 248, 248);
+}
+
+.topnav a.active {
+  background-color: #573A34;
+  color: #ffffff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+p.smaller {
+  line-height: 1.1;
+}
+p.bigger {
+  line-height: 1.5;
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+padding: 20px;
+background: #f1f1f1;
+}
+
+.header {
+padding: 25px;
+width: 50;
+font-size: 40px;
+line-height: 20px;
+text-align: center;
+background: white;
+}
+
+
+/* Add a card effect for articles */
+.card {
+ background-color: white;
+ padding: 30px;
+ margin-top: 20px;
+}
+
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+color: #573A34;
+}
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.column {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 10px;
+}
+
+.about-section {
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: white;
+}
+
+.container {
+padding: 0 16px;
+}
+
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.title {
+color: #484342;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #573A34;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+  width: 100%;
+  display: block;
+}
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+#discussion-container {
+            max-width: 1000px;
+            margin: 10px;
+  
+        }
+
+        #message-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #message-input {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        #send-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #573A34;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
+  div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+  
+  <br>
+  <div class="header">
+    <img src="IT’S A MARKETHING!.png" style="height: 30px;">
+<br>
+<br>
+  
+<div>
+ <img src="HEADER.JPG" style="height: 68px; width: 100%;"  align="center">
+ <br>
+ <br>
+
+ </div>
+  <div class="topnav" id="myTopnav">
+      <a href="HOMEPAGE.html">HOME</a>
+      <a href="ACADEMICS.html">ACADEMICS</a>
+      <a href="CAREER PLANNING.html">CAREER PLANNING</a>
+      <a href="ORGANIZATIONS.html">ORGANIZATION</a>
+      <a class="active" href="HOW TO.html">HOW TO?</a>
+      <a href="ABOUTUS.html">ABOUT US</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="color: #573A34;"></i>
+      </a>
+     
+    </div>
+
+</div>
+
+<div class="row">
+ 
+    <div class="card">
+      <h1 style="color: #573A34;" align="center">HOW TO IN EDUCATION</h1>
+      <br>
+      <p style="margin: 10px; color: #573A34;" class="bigger" align="justify"> To empower students with the knowledge and tools they need for academic success, we aim to inspire and guide you through our comprehensive educational resource. By reading our guide, you'll unlock valuable insights, practical tips, and strategies that not only enhance your learning experience but also pave the way for future achievements. Dive into this guide to discover how to navigate your educational journey with confidence, overcome challenges, and maximize your potential. Let this be your roadmap to academic excellence and personal growth. Your success story begins with the wisdom you gain from these pages. Embrace the opportunity to shape your future — read, learn, and thrive!
+    </p>
+    <br>
+    <br>
+      <div class="responsive" align="center">
+        <div class="gallery">
+          <a target="_blank" href="https://www.edukasyon.ph/blog/categories/edukasyons-guide-to">
+            <img src="SCHOLARSHIP.webp" alt=" SCHOLARSHIP" width="600" height="400">
+          </a>
+          <div class="desc" style="color:#573A34" >EDUKASYON'S GUIDE TO</div>
+          <p style="color:#573A34" align="center">#TakeOnTheWorld: Elevate your career with Mapúa’s new business program offerings!</p>
+        </div>
+      </div>
+      
+      <div class="responsive" align="center">
+        <div class="gallery">
+          <a target="_blank" href="https://www.moneymax.ph/personal-finance/articles/scholarships-philippines?fbclid=IwAR2lFssVN_s_msFSj-_rqWSH5a_wY4s5C2JCkjvaIgZrPJpa_9n1mRIMhmA">
+            <img src="SIP.webp" alt=" SIP" width="600" height="400">
+          </a>
+          <div class="desc" style="color:#573A34" >SCHOLARSHIP GUIDE</div>
+          <p style="color:#573A34" align="center">Are You Eligible for These? 9 Scholarships in the Philippines in 2023</p>
+        </div>
+      </div>
+      
+      <div class="responsive" align="center">
+        <div class="gallery">
+          <a target="_blank" href="https://study.com/resources/college-student-mental-health-guide">
+            <img src="MHEALTH.jpeg" alt="MHEALTH" width="600" height="400">
+          </a>
+          <div class="desc" style="color:#573A34" >HOW TO GET THROUGH COLLEGE </div>
+          <p style="color:#573A34" align="center">Mental Health Guide for College Students</p>
+        </div>
+      </div>
+
+      <div class="responsive" align="center">
+        <div class="gallery">
+          <a target="_blank" href="https://www.aeccglobal.com.ph/scholarships?fbclid=IwAR2Ykvn9TmKfQDYa9UwTAkclnl41g2knoX4C2q6NKIi2fSdNMoq1kJqEvW8">
+            <img src="ABROAD.jpeg" alt="ABROAD" width="600" height="400">
+          </a>
+          <div class="desc" style="color:#573A34" >HOW TO STUDY ABROAD </div>
+          <p style="color:#573A34" align="center"> Study Abroad Scholarships for Filipino Students. Learn everything you need to know about study abroad Scholarships
+            and get end to end expert guidance from us.</p>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+      
+      <div style="padding:6px;"></div>
+      <br>
+      <br>
+</div>
+</div>
+      <div class="row">
+        <div class="center">
+          <div class="card">
+            <h1 style="color: #573A34;" align="center">HOW TO IN MARKETING</h1>
+            <br>
+      
+            <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">To develop a comprehensive marketing guide for students that equips them with foundational knowledge, practical skills, and a strategic mindset, enabling them to understand, plan, and execute effective marketing strategies. The guide aims to foster a deep understanding of marketing principles, highlight the significance of clear and measurable objectives, and provide practical insights through real-world examples and case studies. </p>
+       <br>
+       <br>
+          <div class="responsive" align="center">
+            <div class="gallery">
+              <a target="_blank" href="https://blog.hubspot.com/blog/tabid/6307/bid/2372/the-new-rules-of-marketing.aspx?fbclid=IwAR1htH54PZx1qsHIykeuusfw1ap6j8d-tpRvXQrrDmukaKqLOgBAgDlCAH4">
+             
+              <img src="rules-marketing.webp" alt="RULES" width="600" height="400">
+            </a>
+              <div class="desc" style="color:#573A34" >THE NEW RULES OF MARKETING</div>
+              <p style="color:#573A34" align="center">Marketing your business is both an art and a science — and the industry is rapidly evolving as the audience you're trying to reach is changing.</p>
+            </div>
+          </div>
+          
+          <div class="responsive" align="center">
+            <div class="gallery">
+              <a target="_blank" href="https://blog.hubspot.com/insiders/inbound-marketing-tips?fbclid=IwAR3ZLBtCKCcg60PTciS89DN27ly3SOgOkyI0igs01IJGAu9B3osZ1SXUQKY">
+                <img src="best-marketing-tips.webp" alt="BMT" width="600" height="400">
+              </a>
+              <div class="desc" style="color:#573A34" >20 of the Best Marketing Tips, According to HubSpot Blog Data and Experts</div>
+              <p style="color:#573A34" align="center"> Effective marketers know how to use techniques to connect and convert prospects -- but the greatest marketers of all time laid the foundation for the strategies and successes of marketers today.</p>
+            </div>
+          </div>
+          
+          <div class="responsive" align="center">
+            <div class="gallery">
+              <a target="_blank" href="https://study.com/resources/college-student-mental-health-guide">
+                <img src="5Ps-image.jpeg" alt="5Ps-image" width="600" height="400">
+              </a>
+              <div class="desc" style="color:#573A34" >THE MARKETING MIX 5 PS- HELPING YOU CHOOSE THE RIGHT STRATEGIES</div>
+              <p style="color:#573A34" align="center">The Marketing Mix 5 Ps is a significant tool to help you select and create the right marketing strategies for your business. It forces you to think about which areas of your business you can change or improve on, to help you meet the needs of your target market, add value and differentiate your product or service from your competitors. </p>
+            </div>
+          </div>
+    
+          <div class="responsive" align="center">
+            <div class="gallery">
+              <a target="_blank" href="https://www.aeccglobal.com.ph/scholarships?fbclid=IwAR2Ykvn9TmKfQDYa9UwTAkclnl41g2knoX4C2q6NKIi2fSdNMoq1kJqEvW8">
+                <img src="ABROAD.jpeg" alt="ABROAD" width="600" height="400">
+              </a>
+              <div class="desc" style="color:#573A34" >HOW TO STUDY ABROAD </div>
+              <p style="color:#573A34" align="center"> Study Abroad Scholarships for Filipino Students. Learn everything you need to know about study abroad Scholarships
+                and get end to end expert guidance from us.</p>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:6px;"></div>
+          <br>
+          <br>
+    </div>
+    </div>
+          
+          
+            
+            <div class="clear"></div>
+            
+            <div style="padding:6px;"></div>
+        <br>
+<br>
+<br>
+<br>
+
+<div align="center"></div>
+<!--Footer-->
+<h5 align="center" style="color: #573A34;"> &copy; All rights reserved. 
+<br>
+No part of publication can be reproduced stored in retreval system or transmitted in any form or by any means, electronic, mechanics, or photocopying, recording, or otherwise without the prior permission of the publisher 
+ <br>
+&copy; 2023</h5>
+     
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+function sendMessage() {
+      var messageInput = document.getElementById("message-input");
+      var messageText = messageInput.value;
+
+      if (messageText.trim() !== "") {
+          var messageList = document.getElementById("message-list");
+
+          var listItem = document.createElement("li");
+          listItem.className = "message";
+          listItem.textContent = messageText;
+
+          messageList.appendChild(listItem);
+
+          // Clear the input field after sending the message
+          messageInput.value = "";
+      }
+  }
+  </script>
+
+
+
+</body>
+</html>

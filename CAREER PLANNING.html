@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="logo.jpeg" alt="logo" type="Image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.topnav {
+overflow: hidden;
+background-color: #ffffff;
+position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+.topnav a {
+    float: left;
+font-family: Arial, Helvetica, sans-serif;
+color: #573A34;
+text-align: center;
+width: 16.66%;
+padding: 10px 10px;
+text-decoration: none;
+font-size: 15px;
+display: block;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+color: rgb(255, 248, 248);
+}
+
+.topnav a.active {
+  background-color: #573A34;
+  color: #ffffff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+p.smaller {
+  line-height: 1.1;
+}
+p.bigger {
+  line-height: 1.5;
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+padding: 20px;
+background: #f1f1f1;
+}
+
+.header {
+padding: 25px;
+width: 50;
+font-size: 40px;
+line-height: 20px;
+text-align: center;
+background: white;
+}
+
+
+/* Add a card effect for articles */
+.card {
+ background-color: white;
+ padding: 30px;
+ margin-top: 20px;
+}
+
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+color: #573A34;
+}
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.column {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 10px;
+}
+
+.about-section {
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: white;
+}
+
+.container {
+padding: 0 16px;
+}
+
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.title {
+color: #484342;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #573A34;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+  width: 100%;
+  display: block;
+}
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+#discussion-container {
+            max-width: 1000px;
+            margin: 10px;
+  
+        }
+
+        #message-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #message-input {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        #send-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #573A34;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
+
+</style>
+</head>
+<body>
+  
+  <br>
+  <div class="header">
+    <img src="IT’S A MARKETHING!.png" style="height: 30px;">
+    <br>
+<br>
+
+  
+
+<div>
+  <img src="HEADER.JPG" style="height: 68px; width: 100%;"  align="center">
+  <br>
+ 
+  <br>
+  </div>
+  <div class="topnav" id="myTopnav">
+   <a href="HOMEPAGE.html">HOME</a>
+   <a href="ACADEMICS.html">ACADEMICS</a>
+   <a class="active"  href="CAREER PLANNING.html">CAREER PLANNING</a>
+   <a href="ORGANIZATIONS.html">ORGANIZATION</a>
+   <a href="HOW TO.html">HOW TO?</a>
+   <a href="ABOUTUS.html">ABOUT US</a>
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   <i class="fa fa-bars" style="color: #573A34;"></i>
+ </a>
+   </div>
+ 
+ </div>
+
+ <div class="row">
+  <div class="center">
+    <div class="card">
+      <h1 style="color: #573A34;" align="center">NOTABLE PERSON OF THE MONTH</h1>
+      <p style="color:#573A34" align="center" >A Trailblazing Marketing Leader: Sheilla Marie Dj Apostol, MBA, CPM </p>
+      <br>
+      <div align="center"><img src="shieeella.jpeg"  style="height: 500px; width: 100%;"> 
+        </div>
+     <br>
+     <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">  In the dynamic and ever-evolving world of marketing, Sheilla Marie Dj Apostol, MBA, CPM, stands tall as a beacon of expertise and leadership. With over two decades of industry experience, both locally and in the United States, Sheilla has garnered a wealth of knowledge and insights that have shaped her into a sought-after professional and trainer. Her extensive background in sales and marketing, customer service, service marketing, and administrative roles has provided her with a holistic understanding of the marketing landscape, enabling her to effectively navigate its complexities and guide others towards success. </p>
+        <br>
+     <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">
+       Sheilla's educational background is equally impressive. Holding a Master of Business Administration (MBA) and a Certified Professional Marketer (CPM) designation, she possesses a strong foundation in business principles and marketing strategies. Her academic qualifications, coupled with her extensive practical experience, have made her a highly sought-after speaker and trainer in the field of marketing.
+
+        
+        Throughout her career, Sheilla has demonstrated an unwavering commitment to excellence and innovation. She has consistently sought out new challenges and opportunities to expand her skillset and knowledge base, ensuring that she remains at the forefront of the ever-changing marketing landscape. Her dedication to continuous learning and professional development has been a driving force behind her success.
+
+        </p>
+        <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Sheilla's expertise extends beyond her technical knowledge and skills. She is also a gifted communicator, with a passion for sharing her insights and empowering others to reach their full potential. Her ability to connect with audiences and inspire them to take action has made her a highly effective trainer and mentor.
+  </p>
+     
+    </p>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">  As a Certified Professional Marketer (CPM), Sheilla is committed to upholding the highest standards of ethical and professional conduct. She is an active member of the Philippine Marketing Association (PMA) and the Asia Marketing Federation (AMF), where she contributes her expertise to the advancement of the marketing profession.
+ </p>
+        <br>
+     <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">
+        Sheilla's contributions to the field of marketing have been recognized and applauded by her peers and industry leaders. She is a recipient of numerous awards and accolades, including the prestigious PMA Marketing Excellence Award and the AMF Marketing Innovation Award.
+       Sheilla Marie Dj Apostol, MBA, CPM, is an exemplar of excellence and innovation in the field of marketing. Her extensive experience, unwavering commitment to learning, and passion for empowering others make her a true leader in her profession. She is an inspiration to aspiring marketers and a role model for women in business. 
+        </p>
+        <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Sheilla Marie Dj Apostol, MBA, CPM, is a shining example of what it means to be a successful and impactful marketing professional. Her story serves as an inspiration to marketers of all levels, reminding them of the power of dedication, innovation, and the pursuit of excellence.  </p>
+     
+    </p>
+<br>
+    <p style="color: #573A34;" align="right"><img src="ocampo.jpg" alt="Avatar" class="avatar">   Published by Hannah Yzevel Ocampo, 11/30/23</p>
+    <br>
+  
+<div id="discussion-container">
+<h1>Let us know your thoughts!</h1>
+
+<ul id="message-list"></ul>
+
+<textarea id="message-input" placeholder="Type your comment..."></textarea>
+<button id="send-button" onclick="sendMessage()">Send</button>
+</div>
+ 
+<br>
+<br>
+<br>
+
+    </div>
+<div class="row">
+  <div class="center">
+    <div class="card">
+      <h1 style="color: #573A34;" align="center">STEPS TO IMPROVE YOUR MARKETING CAREER</h1>
+      <br>
+      <br>
+      <br>
+      <div align="center"><img src="inset_decision.jpeg"  style="height: 400px; width: 100%;"> 
+      </div>
+      <br>
+      <br>
+<ul>
+    <li type="1" style="color: #573A34; font-size: larger;"> SET INTENTIONAL CAREER GOALS </li>
+
+     <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">  Oftentimes, this decision is made for you. Is there an open position at your company, or does your company have a dedicated career advancement path? In that case, pursuing your next move at your current company is often your best option. You get the benefit of learning and growing without the learning curve of a new industry, new co-workers, and a new office (or Zoom meeting code).</p>
+    <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Make a list of your career goals outside of a certain job title or salary bracket. These goals shouldn’t be beholden to marketing career path titles, salaries and structures. Often, these are arbitrary and differ from company to company. Here are questions to ask when thinking about your next marketing career goals.</p>
+   <br>
+   <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Do I want to:</p>
+<ul>
+<li style="margin: 10px; color: #573A34;" class="bigger">Pursue a marketing specialty?</li>
+<li style="margin: 10px; color: #573A34;" class="bigger">Work in a certain industry?</li>  
+<li style="margin: 10px; color: #573A34;" class="bigger">Be part of a large or a small team?</li>
+<li style="margin: 10px; color: #573A34;" class="bigger">Be on a founding team?</li>
+<li style="margin: 10px; color: #573A34;" class="bigger">Manage a large or small budget?</li>
+<li style="margin: 10px; color: #573A34;" class="bigger">Work with people I can learn from? If so, in what areas?</li>
+<li style="margin: 10px; color: #573A34;" class="bigger">Work remotely?</li>
+</ul>
+<br>
+<p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Not every position will meet all your goals. But it’s still helpful to have this list when you’re considering opportunities and planning career moves.</p>
+<br>
+<div align="center"><img src="inset_doors.jpeg"  style="height: 400px; width: 100%;"> 
+</div>
+<br>
+<br> 
+<li type="1" style="color: #573A34; font-size: larger;"> DETERMINE AN INTERNAL OR EXTERNAL GOAL </li>
+
+     <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">  It’s tempting to obsess over advancing to a new title—a little signifier of success that you can show off on LinkedIn. Stop to consider what exactly this advancement would mean. Have you mastered everything in your current role? Would a new title provide new opportunities? How would you use those opportunities to grow? But, you may decide that you’re ready to move to another company. Or, as is often the case, your company may not have a clear next step for you. This is typical at startup companies or companies with small marketing teams. So you may have only one choice: spend more time in your current position or leave to pursue something new.</p>
+   <br>
+   <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">How do you know if you’re ready to move to a new company?</p>
+<br>
+<h3 style="margin: 10px; color: #573A34;" class="bigger"> Learn a new skill</h3>
+<br>
+<p style="margin: 10px; color: #573A34;" class="bigger" align="justify">If you enter a team as a content writer, you may want to branch out into more of an SEO management role. You’ll explore SEO tools and strategies in this type of position. Or, if you start as an email marketing specialist, perhaps marketing operations will have some appeal to you. You’ll operate a marketing automation platform and likely work with the sales ops team running the company’s CRM. If your current team doesn’t have these types of roles, or does not support this type of growth, it may be time to move on.</p>
+<br>
+<h3 style="margin: 10px; color: #573A34;" class="bigger"> Try a new industry</h3>
+<br>
+<p style="margin: 10px; color: #573A34;" class="bigger" align="justify">One reason why marketing is a great career is because you not only learn a lot about the marketing world, but you also learn so much about every industry that your business is in. If you’ve spent a few years marketing to healthcare, for example, you might want to try your hand at marketing to software developers. If you’ve spent your career in B2B, you may also want to try B2C, or vice versa. Different industries prioritize different types of marketing, so you may be on a team that runs a go-to-market motion that is partner-led and therefore has a channel marketing function, while  another company may have an event-led go-to-market strategy where a full events team is employed.</p>
+<br>
+<h3 style="margin: 10px; color: #573A34;" class="bigger"> Meet new people</h3>
+<br>
+<p style="margin: 10px; color: #573A34;" class="bigger" align="justify">We learn so much from every co-worker and manager. Advancing your career can sometimes mean shaking up your work environment. When you move to a new company, you can guarantee that you’ll grow by learning how to work with new and different people. This is especially true if you go to a larger marketing team that may have specialized sub teams for digital marketing, events, marketing operations, content, social media, and more. </p>
+<br>
+
+<li type="1" style="color: #573A34; font-size: larger;"> CONSIDER GENERALIZED SPECIFIC MARKETING PATHS</li>
+
+     <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify"> Marketers love to say that they wear many hats. One day they might be a designer, one day a journalist, and one day an analyst. When companies smaller and they are beginning to invest in marketing, they are often looking for the type of marketer that can do it all, or a generalist.
+
+        Yet, at some point, too many generalists feels like too many cooks. When they start to grow, companies see the value of having a dedicated graphic designer, a content manager, a marketing analyst, a campaign manager, and/or social media manager, to name a few.</p>
+   <br>
+   <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">A full-stack marketing team might consist of 10+ specialists with concentrated experience. Marketing specialties include digital marketing, content, search engine optimization (SEO), pay-per-click management, graphic design, public relations, brand management, product marketing, analytics, campaign management, email marketing,marketing operations/marketing automation, events, customer engagement programs, and sales enablement. In some industries, there may be even more.
+
+    Most marketers spend some time as a generalist, and some time as a specialist. Often, generalist skills apply if you’re managing a team or heading up a department. Otherwise, special skills can take marketers far.
+    
+    If you’ve spent some time as a generalist, consider a role that will allow you to focus on a specialty. If you’ve been in a specialty for a long time, consider expanding your skill set by spending some time as a generalist. This will provide you with an opportunity to grow and become a more well-rounded marketer.</p>
+
+</ul>
+<br>
+<br>
+<h1 style="margin: 10px; color: #573A34;" class="bigger"> CONCLUSION</h1>
+<br>
+<p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Pursuing a marketing career is a rewarding and challenging journey. As you chart your marketing adventure, consider both following the established trails and finding a way to forge your own path.</p>
+<br>
+<br>
+<p style="color: #573A34;" align="right"><img src="me.jpeg" alt="Avatar" class="avatar">   Published by Francesca Kahlil Tarriela, 11/30/23</p>
+<br>
+<br>
+
+      </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div align="center"></div>
+<!--Footer-->
+<h5 align="center" style="color: #573A34;"> &copy; All rights reserved. 
+<br>
+No part of publication can be reproduced stored in retreval system or transmitted in any form or by any means, electronic, mechanics, or photocopying, recording, or otherwise without the prior permission of the publisher 
+ <br>
+&copy; 2023</h5>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  function sendMessage() {
+        var messageInput = document.getElementById("message-input");
+        var messageText = messageInput.value;
+
+        if (messageText.trim() !== "") {
+            var messageList = document.getElementById("message-list");
+
+            var listItem = document.createElement("li");
+            listItem.className = "message";
+            listItem.textContent = messageText;
+
+            messageList.appendChild(listItem);
+
+            // Clear the input field after sending the message
+            messageInput.value = "";
+        }
+    }
+  </script>
+
+</body>
+</html>

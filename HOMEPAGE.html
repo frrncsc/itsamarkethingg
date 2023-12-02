@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="logo.jpeg" alt="Logo" type="Image/x-icon">
+<title>ITSAMARKETHING</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.topnav {
+overflow: hidden;
+background-color: #ffffff;
+position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+.topnav a {
+    float: left;
+font-family: Arial, Helvetica, sans-serif;
+color: #573A34;
+text-align: center;
+width: 16.66%;
+padding: 10px 10px;
+text-decoration: none;
+font-size: 15px;
+display: block;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+color: rgb(255, 248, 248);
+}
+
+.topnav a.active {
+  background-color: #573A34;
+  color: #ffffff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+p.smaller {
+  line-height: 1.1;
+}
+p.bigger {
+  line-height: 1.5;
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+padding: 20px;
+background: #f1f1f1;
+}
+
+.header {
+padding: 25px;
+width: 50;
+font-size: 40px;
+line-height: 20px;
+text-align: center;
+background: white;
+}
+
+
+/* Add a card effect for articles */
+.card {
+ background-color: white;
+ padding: 30px;
+ margin-top: 20px;
+}
+
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+color: #573A34;
+}
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.column {
+float: left;
+width: 33.3%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 10px;
+}
+
+.about-section {
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: white;
+}
+
+.container {
+padding: 0 16px;
+}
+
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.title {
+color: #484342;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #573A34;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.button:hover {
+background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+  width: 100%;
+  display: block;
+}
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+#discussion-container {
+            max-width: 1000px;
+            margin: 10px;
+  
+        }
+
+        #message-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #message-input {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        #send-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #573A34;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
+
+</style>
+</head>
+<body>
+    <br>
+    <div class="header">
+      <img src="IT’S A MARKETHING!.png" style="height: 30px;">
+  <br>
+  <br>
+    
+  <div>
+   <img src="HEADER.JPG" style="height: 68px; width: 100%;"  align="center">
+   <br>
+   <br>
+<div class="topnav" id="myTopnav">
+    <a class="active" href="HOMEPAGE.html">HOME</a>
+    <a href="ACADEMICS.html">ACADEMICS</a>
+    <a href="CAREER PLANNING.html">CAREER PLANNING</a>
+    <a href="ORGANIZATIONS.html">ORGANIZATION</a>
+    <a href="HOW TO.html">HOW TO?</a>
+    <a href="ABOUTUS.html">ABOUT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style="color: #573A34;"></i>
+  </a>
+</div>
+</div>
+</div>
+ 
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <a href="CAREER PLANNING.html">
+      <img src="shiella.jpeg" alt="shiella" style="width:100%">
+    </a>
+      <br>
+      <div class="desc" style="color:#573A34" align="center" >#NOTABLE PERSON OF THE MONTH!</div>
+      <p style="color:#573A34" align="center">Certified Professional Marketer Philippines 
+      Master in Business Administration</p>
+      <p style="color:#573A34" align="center">Gained more than 20 years of industry experience, local and USA, in the field of sales and marketing, customer service,
+        service marketing and Administrative role.
+      </p>
+   
+     
+     
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <a href="ACADEMICS.html">
+      <img src="business exploration copy.jpeg" alt="business" style="width:100%">
+      </a>
+      <br>
+      <div class="desc" style="color:#573A34" align="center">#SEE WHAT AWAITS FOR YOU!</div>
+      <P style="color:#573A34" align="center">Efficiency to digitalized unlocked!</P>
+      <p style="color:#573A34" align="center">The expidition will continue as you wonder further to corporate field! Make sure 
+        to step into these opportunities knocking at your door now.
+      </p>
+  
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <a href="ORGANIZATIONS.html">
+      <img src="INNOVISION copy.jpeg" alt="nnov" style="width:100%">
+      </a>
+      <br>
+      <div class="desc" style="color: #573A34; ; " align="center">#BRIDGING MARKETING EXCELLENCE!</div>
+      <P style="color:#573A34" align="center" size="5px">FEUD JUNIOR MARKETING ASSOCIATION</P>
+      <P style="color:#573A34" align="center">Innovision 2023; Bridging Marketing Exellence for Future Success was
+      a success! The organization gathered 200 students for career enlightenment and developmental activities</P>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="center">
+      <div class="card">
+        <h1 style="color: #573A34;" align="center">READ: Marketing in Today's Generation: A Balancing Act of Creativity, Technology, and Authenticity</h1>
+        <p style="margin: 10px; color: #573a34;" class="bigger" align="justify">
+    
+        <br>
+        <div align="center"><img src="neews.png"  style="height: 500px; width: 100%;"> 
+          </div>
+  
+    <br>
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">In today's hyperconnected world, marketing has evolved into a dynamic and multifaceted discipline, demanding a blend of creativity, technological prowess, and an unwavering commitment to authenticity. 
+        As consumers become increasingly discerning and tech-savvy, marketers must adapt their strategies to capture attention, build trust, and foster meaningful connections.
+        Creativity remains the cornerstone of effective marketing, as consumers gravitate towards brands that engage them with innovative ideas, captivating storytelling, and visually appealing content. 
+        However, creativity alone is not enough. </p>
+        <br>
+        <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Marketers must seamlessly integrate technology into their campaigns, leveraging data analytics, social media platforms, and emerging technologies to reach a wider audience, understand consumer behavior, and optimize their strategies.
+    Authenticity is paramount in today's marketing landscape.  Consumers are wary of overly polished and scripted advertising, seeking brands that are genuine, transparent, and relatable. Marketers must embrace authenticity, showcasing their brand's values, personality, and human touch. This authenticity fosters trust, loyalty, and long-lasting customer relationships.</p>
+    <br>
+   
+    <p style="margin: 10px; color: #573A34;" class="bigger" align="justify">Marketing in today's generation is a balancing act of creativity, technology, and authenticity. By embracing these elements, marketers can navigate the ever-changing landscape, connect with consumers on a deeper level, and achieve sustainable success.</p>
+<br>
+
+        <p style="color: #573A34;" align="right"><img src="ocampo.jpg" alt="Avatar" class="avatar">   Published by Hannah Yzevel Ocampo, 11/30/23</p>
+        <br>
+      
+<div id="discussion-container">
+  <h1>Let us know your thoughts!</h1>
+  
+  <ul id="message-list"></ul>
+
+  <textarea id="message-input" placeholder="Type your comment..."></textarea>
+  <button id="send-button" onclick="sendMessage()">Send</button>
+</div>
+      </div>
+        <br>
+        <br>
+
+
+
+<div align="center"></div>
+<!--Footer-->
+<h5 align="center" style="color: #573A34;"> &copy; All rights reserved. 
+<br>
+No part of publication can be reproduced stored in retreval system or transmitted in any form or by any means, electronic, mechanics, or photocopying, recording, or otherwise without the prior permission of the publisher 
+ <br>
+&copy; 2023</h5>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+  function sendMessage() {
+        var messageInput = document.getElementById("message-input");
+        var messageText = messageInput.value;
+
+        if (messageText.trim() !== "") {
+            var messageList = document.getElementById("message-list");
+
+            var listItem = document.createElement("li");
+            listItem.className = "message";
+            listItem.textContent = messageText;
+
+            messageList.appendChild(listItem);
+
+            // Clear the input field after sending the message
+            messageInput.value = "";
+        }
+    }
+    </script>
+
+</body>
+</html>
